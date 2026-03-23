@@ -30,4 +30,4 @@ py manage.py runserver
 
 Then follow the link to http://127.0.0.1:8000/.
 
-Additionally, go to http://127.0.0.1:8000/admin/ for access to the admin page.
+Additionally, go to http://127.0.0.1:8000/admin/ for access to the admin page (Login with the credentials you provided).
