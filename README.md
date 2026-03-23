@@ -14,6 +14,10 @@ git clone https://github.com/thispancakes/Cithara.git
 cd cithara
 ```
 ### Step 2
+Run the following:
+```
+py manage.py migrate
+```
 Create a Django admin user. Instructions can be found on the "Creating an admin user" Section here:   
 https://docs.djangoproject.com/en/6.0/intro/tutorial02/#creating-an-admin-user.
 ### Step 3
