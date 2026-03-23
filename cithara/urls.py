@@ -20,5 +20,7 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
 
-    path('', include('cithara.apps.user.urls'))
+    path('', include('cithara.apps.core.urls')),
+    path('users/', include('cithara.apps.user.urls')),
+    path('songs/', include('cithara.apps.song.urls')),
 ]

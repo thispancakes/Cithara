@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
-    'cithara.apps.user'
+    'cithara.apps.core',
+    'cithara.apps.user',
+    'cithara.apps.song',
 ]
 
 MIDDLEWARE = [

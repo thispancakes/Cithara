@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+{% load static %}
+<link rel="stylesheet" href="{% static 'style.css' %}">
+
+<body>
+    <div class="container">
+        <h1>Songs</h1>
+        <table id="customers" border="1">
+            <thead>
+                <th>Id</th>
+                <th>OwnerID</th>
+                <th>Generation Status</th>
+                <th>Title</th>
+                <th>Occasion</th>
+                <th>Genre</th>
+                <th>Singer Voice Type</th>
+                <th>Mood</th>
+                <th>Track Length</th>
+                <th>Share Link</th>
+                <th colspan="2" id="mid">Action</th>
+            </thead>
+            {% for x in songs %}
+            <tr>
+                <td>{{x.id}}</td>
+                <td>{{x.owner.id}}</td>
+                <td>{{x.generation_status}}</td>
+                <td>{{x.title}}</td>
+                <td>{{x.occasion}}</td>
+                <td>{{x.genre}}</td>
+                <td>{{x.singer_voice_type}}</td>
+                <td>{{x.mood}}</td>
+                <td>{{x.track_length}}</td>
+                <td>{{x.share_link}}</td>
+                <td>
+                    <a href="update/{{x.id}}"><button id="up">update</button></a>
+                </td>
+                <td>
+                    <a href="delete/{{x.id}}"><button id="del">delete</button></a>
+                </td>
+            </tr>
+            {% endfor %}
+        </table>
+        <br><br>
+        <a href="{% url 'create' %}"><button id="new3">Add Song</button></a>
+</body>
+
+</html>
