@@ -6,9 +6,12 @@ CRUD Functionaly is implemented using Django Admin. Views are currently not full
 Have Python 3.12 or later installed: https://www.python.org/downloads/.  
 Have Django 6.0.3 installed: https://www.djangoproject.com/download/.
 ### Step 1  
-Navigate to your desired directory to put the project in on your command line interface. Then clone the repository.  
+Navigate to your desired directory to put the project in on your command line interface. Then clone the repository and navigate into the folder.  
 ```
 git clone https://github.com/thispancakes/Cithara.git
+```
+```
+cd cithara
 ```
 ### Step 2
 Create a Django admin user. Instructions can be found on the "Creating an admin user" Section here:   
