@@ -53,6 +53,7 @@ finished Suno output example:
 ![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225655.png)  
   
 You can periodically see the suno song status in the terminal output:  
-![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225815.png)
+![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225815.png)  
+![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20232912.png)  
   
 You could also check the Suno website to see if its working.
