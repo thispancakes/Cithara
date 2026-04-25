@@ -9,4 +9,6 @@ urlpatterns = [
     path('update/<int:pk>/', views.UpdateView.as_view(), name="update"),
     path('update/update_song/<int:id>/', views.update_song, name="update_song"),
     path('delete/<int:id>/', views.delete, name="delete"),
+    path('generate/', views.GenerateView.as_view(), name="generate"),
+    path('generate/generate_song', views.generate_song, name="generate_song"),
 ]

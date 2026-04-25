@@ -35,3 +35,5 @@ class Song(models.Model):
 
     track_length = models.PositiveIntegerField(default=0)
     share_link = models.CharField(max_length=255, default="", blank=True)
+
+    audio_url = models.CharField(max_length=255, default="", blank=True)

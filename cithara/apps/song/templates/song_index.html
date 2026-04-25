@@ -25,6 +25,7 @@
                 <th>Mood</th>
                 <th>Track Length</th>
                 <th>Share Link</th>
+                <th>Audio URL</th>
                 <th colspan="2" id="mid">Action</th>
             </thead>
             {% for x in songs %}
@@ -39,6 +40,7 @@
                 <td>{{x.mood}}</td>
                 <td>{{x.track_length}}</td>
                 <td>{{x.share_link}}</td>
+                <td>{{x.audio_url}}</td>
                 <td>
                     <a href="update/{{x.id}}"><button id="up">update</button></a>
                 </td>
@@ -50,6 +52,7 @@
         </table>
         <br><br>
         <a href="{% url 'create' %}"><button id="new3">Add Song</button></a>
+        <a href="{% url 'generate' %}"><button id="new3">Generate Song</button></a>
 </body>
 
 </html>

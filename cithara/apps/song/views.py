@@ -3,6 +3,7 @@ from django.views import generic
 from django.core.exceptions import ValidationError
 
 from .models import Song, User
+from .services.generate import generate_song_service
 
 
 # Create your views here.
@@ -16,6 +17,11 @@ class IndexView(generic.ListView):
 class CreateView(generic.CreateView):
     model = MODEL
     template_name = "song_create.html"
+    fields = [f.name for f in MODEL._meta.get_fields()]
+
+class GenerateView(generic.CreateView):
+    model = MODEL
+    template_name = "song_generate.html"
     fields = [f.name for f in MODEL._meta.get_fields()]
 
 class UpdateView(generic.UpdateView):
@@ -44,6 +50,34 @@ def create_song(request):
             singer_voice_type = singer_voice_type,
             mood = mood,
         )
+        return redirect('/songs/')
+    return render(request, "song_create.html")
+
+def generate_song(request):
+    if request.method == 'POST':
+        data = request.POST
+
+        ownerid = data.get('owner')
+        owner = get_object_or_404(User, id=ownerid)
+
+        title = data.get('title')
+        occasion = data.get('occasion')
+        genre = data.get('genre')
+        singer_voice_type = data.get('singer_voice_type')
+        mood = data.get('mood')
+
+        song = MODEL.objects.create(
+            owner = owner,
+            generation_status = "GEN",
+            title = title,
+            occasion = occasion,
+            genre = genre,
+            singer_voice_type = singer_voice_type,
+            mood = mood,
+        )
+
+        generate_song_service(data, song)
+
         return redirect('/songs/')
     return render(request, "song_create.html")
 
