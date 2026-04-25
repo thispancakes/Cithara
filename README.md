@@ -1,6 +1,9 @@
 # Cithara
 ## CRUD Funtionality
 CRUD Functionaly is implemented using Django Admin. Views are currently not fully complete.
+![CREATE](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-03-23%20190216.png)
+![READ/DELETE](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-03-23%20190325.png)
+![UPDATE](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-03-23%20190413.png)
 ## Installation
 ### Prerequisites
 Have Python 3.12 or later installed: https://www.python.org/downloads/.  
@@ -20,9 +23,7 @@ py manage.py migrate
 ```
 Create a Django admin user. Instructions can be found on the "Creating an admin user" Section here:   
 https://docs.djangoproject.com/en/6.0/intro/tutorial02/#creating-an-admin-user.
-### Step 3
-(This is the only step you need to repeat if you have done the installation before.)  
-
+## Running
 Run the following:
 ```
 py manage.py runserver
