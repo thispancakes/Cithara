@@ -42,10 +42,10 @@ Then follow the link to http://127.0.0.1:8000/.
 Additionally, go to http://127.0.0.1:8000/admin/ for access to the admin page (Login with the credentials you provided).
 
 ## Song Generation
-After going to http://127.0.0.1:8000/, you need to head to the user page to create a user to reference when generating a song (This can also be done on the admin page).  
-![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225845.png)  
+Go to the admin page to create a user http://127.0.0.1:8000/admin/.  
   
-Then go back to the head to the songs page, and click the generate song button and fill out the details (use the created users id). Using the suno strategy will cause the generation page to load for a little while.  
+![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225845.png)  
+Then go to http://127.0.0.1:8000/ to the songs page, and click the generate song button and fill out the details (use the created users id). Using the suno strategy will cause the generation page to load for a little while.  
 Mock output example:  
 ![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225731.png)  
   
