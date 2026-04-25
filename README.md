@@ -1,4 +1,6 @@
 # Cithara
+Exercise 1: https://docs.google.com/document/d/1aih2pXZoWlwIC8qZXn3BHMQrw_FYupJAbrDeyMKP-g0/edit?usp=sharing  
+Exercise 2: https://docs.google.com/document/d/1i0DAdeH7V0wZpY8sN6MNFgOaq2n5ADCWox5FyQtKJVU/edit?usp=sharing  
 ## CRUD Funtionality
 CRUD Functionaly is implemented using Django Admin.
 ![CREATE](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-03-23%20190216.png)
