@@ -16,6 +16,14 @@ git clone https://github.com/thispancakes/Cithara.git
 ```
 cd cithara
 ```
+Create a config.py file in the cithara directory from the example config_example.py (not the root directory)  
+```
+GENERATION_STRATEGY = 'mock' # 'mock' or 'suno'
+SUNO_API_KEY = '' # Your Suno API key here
+```
+Where GENERATION_STRATEGY is either 'mock' or 'suno' depending on what strategy you want to use. SUNO_API_KEY is required if you are using the suno strategy.  
+You can aquire an API key from going to https://sunoapi.org/api-key (You will need to make an account if you do not already have one) and then pressing the 'Copy' button.
+
 ### Step 2
 Run the following:
 ```
@@ -34,14 +42,6 @@ Then follow the link to http://127.0.0.1:8000/.
 Additionally, go to http://127.0.0.1:8000/admin/ for access to the admin page (Login with the credentials you provided).
 
 ## Song Generation
-Create a config.py file in the cithara directory from the example config_example.py  
-```
-GENERATION_STRATEGY = 'mock' # 'mock' or 'suno'
-SUNO_API_KEY = '' # Your Suno API key here
-```
-Where GENERATION_STRATEGY is either 'mock' or 'suno' depending on what strategy you want to use. SUNO_API_KEY is required if you are using the suno strategy.  
-You can aquire an API key from going to https://sunoapi.org/api-key (You will need to make an account if you do not already have one) and then pressing the 'Copy' button.
-
 After going to http://127.0.0.1:8000/, you need to head to the user page to create a user to reference when generating a song (This can also be done on the admin page).  
 ![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225845.png)  
   
