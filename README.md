@@ -1,6 +1,6 @@
 # Cithara
 ## CRUD Funtionality
-CRUD Functionaly is implemented using Django Admin. Views are currently not fully complete.
+CRUD Functionaly is implemented using Django Admin.
 ![CREATE](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-03-23%20190216.png)
 ![READ/DELETE](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-03-23%20190325.png)
 ![UPDATE](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-03-23%20190413.png)
@@ -32,3 +32,27 @@ py manage.py runserver
 Then follow the link to http://127.0.0.1:8000/.
 
 Additionally, go to http://127.0.0.1:8000/admin/ for access to the admin page (Login with the credentials you provided).
+
+## Song Generation
+Create a config.py file in the cithara directory from the example config_example.py  
+```
+GENERATION_STRATEGY = 'mock' # 'mock' or 'suno'
+SUNO_API_KEY = '' # Your Suno API key here
+```
+Where GENERATION_STRATEGY is either 'mock' or 'suno' depending on what strategy you want to use. SUNO_API_KEY is required if you are using the suno strategy.  
+You can aquire an API key from going to https://sunoapi.org/api-key (You will need to make an account if you do not already have one) and then pressing the 'Copy' button.
+
+After going to http://127.0.0.1:8000/, you need to head to the user page to create a user to reference when generating a song (This can also be done on the admin page).  
+![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225845.png)  
+  
+Then go back to the head to the songs page, and click the generate song button and fill out the details (use the created users id). Using the suno strategy will cause the generation page to load for a little while.  
+Mock output example:  
+![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225731.png)  
+  
+finished Suno output example:  
+![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225655.png)  
+  
+You can periodically see the suno song status in the terminal output:  
+![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225815.png)
+  
+You could also check the Suno website to see if its working.
