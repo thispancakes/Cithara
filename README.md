@@ -45,7 +45,7 @@ Additionally, go to http://127.0.0.1:8000/admin/ for access to the admin page (L
 Go to the admin page to create a user http://127.0.0.1:8000/admin/.  
   
 ![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225845.png)  
-Then go to http://127.0.0.1:8000/ to the songs page, and click the generate song button and fill out the details (use the created users id). Using the suno strategy will cause the generation page to load for a little while.  
+Then go to http://127.0.0.1:8000/ to the songs page, and click the generate song button and fill out the details (use the created users id, which should be 1). Using the suno strategy will cause the generation page to load for a little while.  
 Mock output example:  
 ![](https://github.com/thispancakes/Cithara/blob/main/images/Screenshot%202026-04-25%20225731.png)  
   
